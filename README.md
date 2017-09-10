@@ -11,8 +11,8 @@ Fork based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race).
 # HOW-TO: Run the server:
 - Download server from release or compile it.
 - MySQL DB Server must be running!
-- Ppenfire XMPP Server must be running! (try openfire/README.md file)
-- Edit nfsw.cfg file.
+- Openfire XMPP Server must be running! (try openfire/README.md file)
+- Edit "nfsw.cfg" file.
     
 Java command to run server:
 
@@ -24,10 +24,9 @@ Java command to run server:
 
 ```
 format:
+
 email            passwordHash (SHA-1)
 debug@player1    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
-debug@player2    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
-debug@player3    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 ```
 
 # HOW-TO: Get loginToken and userID:
