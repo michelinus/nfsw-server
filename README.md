@@ -1,6 +1,12 @@
 # NFSW-Server
 
-Project based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race)
+Project based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race).
+
+# HOW-TO: Compile Source: 
+- Download Eclipse JavaEE.
+- Download eGit Maven SCM profile from the Eclipse marketplace. 
+- Import project from the SCM profile .
+- Build the server with the built-in maven using `clean compile assembly:single`.
 
 # HOW-TO: Run the server:
 
@@ -37,7 +43,7 @@ examples:
 
 # HOW-TO: Launch Need For Speed World:
 
--create a link to nfsw.exe and edit it like this:
+- create a link to nfsw.exe and edit it like this:
 
 `\path\to\nfsw.exe ANYTHING_YOU_WANT http://ip-to-http-host:1337/nfsw/Engine.svc loginToken userId`
 
@@ -54,9 +60,3 @@ example:
 example
 
 `http://localhost:1337/nfsw/Engine.svc/user/createUser?email=myuser@somewhere&password=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3`
-
-# HOW-TO: Compile Source: 
-- Download Eclipse JavaEE.
-- Download eGit Maven SCM profile from the Eclipse marketplace. 
-- Import project from the SCM profile .
-- Build the server with the built-in maven using `clean compile assembly:single`.
