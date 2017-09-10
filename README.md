@@ -9,12 +9,12 @@ Fork based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race).
 - Build the server with the built-in maven using `clean compile assembly:single`.
 
 # HOW-TO: Run the server:
-
-- mysql db server running
-- openfire xmpp server running (try openfire/README.md file)
-- edit nfsw.cfg file 
+- Download server from release or compile it.
+- MySQL DB Server must be running!
+- Ppenfire XMPP Server must be running! (try openfire/README.md file)
+- Edit nfsw.cfg file.
     
-example:
+Java command to run server:
 
     java -jar server.jar
 
