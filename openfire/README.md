@@ -1,6 +1,6 @@
 # Using openfire 4.0.3
 
-- install openfire
+- Download (from internet or release) and install openfire
 
 
 # Windows:

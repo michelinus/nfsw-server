@@ -12,10 +12,9 @@ Fork based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race).
 - Download server from release or compile it.
 - MySQL DB Server must be running!
 - Openfire XMPP Server must be running! (try openfire/README.md file)
-- Edit "nfsw.cfg" file.
+- Edit "nfsw.cfg" file from release or from src/main/resources directory
     
 Java command to run server:
-
     java -jar server.jar
 
 # HOW-TO: Login:
