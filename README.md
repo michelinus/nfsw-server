@@ -1,6 +1,6 @@
-# NFSW-Server
+# Need For Speed World Server
 
-Project based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race).
+Fork based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race).
 
 # HOW-TO: Compile Source: 
 - Download Eclipse JavaEE.
@@ -12,7 +12,7 @@ Project based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race)
 
 - mysql db server running
 - openfire xmpp server running (try openfire/README.md file)
-- edit soapbox.properties file 
+- edit nfsw.cfg file 
     
 example:
 
@@ -24,7 +24,7 @@ example:
 
 ```
 format:
-email            passwordHash
+email            passwordHash (SHA-1)
 debug@player1    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 debug@player2    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 debug@player3    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
@@ -32,14 +32,11 @@ debug@player3    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 
 # HOW-TO: Get loginToken and userID:
 
-`http://ip-to-http-host:1337/nfsw/Engine.svc/user/authenticateUser?email=SOME_EMAIL&password=SOME_HASH_PASSWORD`
+`http://ip-to-http-host:1337/nfsw/Engine.svc/user/authenticateUser?email=EMAIL&password=SHA1_PASSWORD`
 
-examples:
+example:
 
     http://localhost:1337/nfsw/Engine.svc/user/authenticateUser?email=debug@player1&password=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
-    http://localhost:1337/nfsw/Engine.svc/user/authenticateUser?email=debug@player2&password=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
-    http://localhost:1337/nfsw/Engine.svc/user/authenticateUser?email=debug@player3&password=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
-
 
 # HOW-TO: Launch Need For Speed World:
 
