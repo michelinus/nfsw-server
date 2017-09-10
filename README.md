@@ -1,8 +1,8 @@
 # NFSW-Server
 
-Project based on soapbox-race
+Project based on soapbox-race by nilzao (https://github.com/nilzao/soapbox-race)
 
-#HOW-TO: Run the server:
+# HOW-TO: Run the server:
 
 - mysql db server running
 - openfire xmpp server running (try openfire/README.md file)
@@ -12,7 +12,7 @@ example:
 
     java -jar server.jar
 
-##How to login
+# HOW-TO: Login:
 
 - Users + Password hashes(SHA-1) (default MySQL entries):
 
@@ -24,7 +24,7 @@ debug@player2    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 debug@player3    a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 ```
 
-- Get loginToken and userID with:
+# HOW-TO: Get loginToken and userID:
 
 `http://ip-to-http-host:1337/nfsw/Engine.svc/user/authenticateUser?email=SOME_EMAIL&password=SOME_HASH_PASSWORD`
 
@@ -35,15 +35,17 @@ examples:
     http://localhost:1337/nfsw/Engine.svc/user/authenticateUser?email=debug@player3&password=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 
 
-- Launch Need For Speed World with the parameters: 
+# HOW-TO: Launch Need For Speed World:
 
-`nfsw.exe ANYTHING_YOU_WANT http://ip-to-http-host:1337/nfsw/Engine.svc loginToken userId`
+-create a link to nfsw.exe and edit it like this:
+
+`\path\to\nfsw.exe ANYTHING_YOU_WANT http://ip-to-http-host:1337/nfsw/Engine.svc loginToken userId`
 
 example:
 
-`nfsw.exe US http://localhost:1337/nfsw/Engine.svc 3484061174147 3`
+`\path\to\nfsw.exe US http://localhost:1337/nfsw/Engine.svc 3484061174147 3`
 
-##How to create users
+# HOW-TO: Create users
 
 - Create user
 
@@ -52,3 +54,9 @@ example:
 example
 
 `http://localhost:1337/nfsw/Engine.svc/user/createUser?email=myuser@somewhere&password=a94a8fe5ccb19ba61c4c0873d391e987982fbbd3`
+
+# HOW-TO: Compile Source: 
+- Download Eclipse JavaEE.
+- Download eGit Maven SCM profile from the Eclipse marketplace. 
+- Import project from the SCM profile .
+- Build the server with the built-in maven using `clean compile assembly:single`.
